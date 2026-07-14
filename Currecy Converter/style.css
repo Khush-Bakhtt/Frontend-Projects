@@ -1,0 +1,175 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #0f172a, #092b88, #0a164d);
+}
+
+.container {
+  background-color:black;
+  color: #ffff;
+  transition: all 0.3s ease-in-out;
+  animation: fadeInUp .8s ease-in-out;
+  box-shadow: 0 10px 30px rgba(0,0,0,.35);
+  padding: 2rem;
+  border-radius: 20px;
+  min-height: 45vh;
+  width: 40vh;
+  
+}
+
+.container:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 25px 50px rgba(0,0,0,.5);
+}
+
+.container h2 {
+    font-size: 2rem;
+    letter-spacing: 1px;
+    color: #60a5fa;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+form {
+  margin: 2rem 0 1rem 0;
+}
+
+form select,
+button,
+input {
+  width: 100%;
+  border: none;
+  outline: none;
+  border-radius: 0.75rem;
+}
+
+input::placeholder {
+    color: #9ca3af;
+}
+
+form input {
+  background: #1f2937;
+  color: white;
+  border: 2px solid transparent;
+  transition: 0.3s;
+  font-size: 1rem;
+  height: 2rem;
+  padding-left: 0.5rem;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input,
+select,
+button{
+    transition:.3s;
+}
+
+form input:focus {
+    border-color: #3b82f6;
+}
+
+.dropdown {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.dropdown i {
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  transition: .5s;
+  color: #3b82f6;
+}
+
+.dropdown i:hover {
+    transform: rotate(180deg);
+}
+
+select {
+    cursor: pointer;
+} 
+
+.select-container img {
+  max-width: 2rem;
+}
+
+.select-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 6rem;
+  border-radius: 0.5rem;
+  background: #1f2937;
+  border: 2px solid transparent;
+  transition: .3s;
+}
+
+.select-container select {
+  font-size: 1rem;
+  width: auto;
+}
+
+.select-container img {
+    transition: .3s;
+}
+
+.select-container:hover {
+    border-color: #3b82f6;
+}
+
+.select-container img:hover {
+    transform: scale(1.1);
+}
+
+.msg {
+    margin: 2rem 0;
+    text-align: center;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #38bdf8;
+    letter-spacing: 0.5px;
+    transition: all .3s ease;
+    text-shadow: 0 0 8px rgba(56, 189, 248, 0.5);
+}
+
+form button {
+  height: 3rem;
+  background: linear-gradient(90deg,#2563eb,#7c3aed);
+  font-size: 1.15rem;
+  transition: .3s;
+  cursor: pointer;
+}
+
+form button:active{
+    transform: scale(.97);
+}
+
+form button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(37, 99, 235, 0.4);
+}
