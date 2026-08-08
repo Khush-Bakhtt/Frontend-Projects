@@ -1,0 +1,169 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #0f172a;
+  text-align: center;
+  color: #f8fafc;
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  margin-top: 30px;
+  font-size: 2.5rem;
+}
+
+/* Scoreboard */
+
+.scoreboard {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.scoreboard div {
+  background-color: #1e293b;
+  padding: 10px 20px;
+  border-radius: 10px;
+  min-width: 90px;
+}
+
+.scoreboard p {
+  margin-bottom: 5px;
+  font-size: 0.9rem;
+}
+
+.scoreboard span {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/* Game */
+
+.container {
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.game {
+  height: 60vmin;
+  width: 60vmin;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5vmin;
+}
+
+.box {
+  height: 18vmin;
+  width: 18vmin;
+  border-radius: 1rem;
+  border: 2px solid #334155;
+  background-color: #1e293b;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+
+  font-size: 8vmin;
+  font-weight: bold;
+
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.box:hover {
+  background-color: #334155;
+  transform: scale(1.05);
+}
+
+/* O and X colors */
+
+.box.o {
+  color: #22d3ee;
+}
+
+.box.x {
+  color: #f472b6;
+}
+
+/* Buttons */
+
+#reset-btn,
+#new-btn {
+  padding: 0.8rem 1.5rem;
+  font-size: 1.1rem;
+  background-color: #7c3aed;
+  color: white;
+  border-radius: 0.7rem;
+  border: none;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+#reset-btn:hover,
+#new-btn:hover {
+  background-color: #9333ea;
+  transform: translateY(-2px);
+}
+
+/* Winner message */
+
+#msg {
+  color: #22d3ee;
+  font-size: 5vmin;
+  font-weight: bold;
+}
+
+.msg-container {
+  height: 100vmin;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.hide {
+  display: none;
+}
+
+/* Mobile */
+
+@media (max-width: 600px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  .scoreboard {
+    gap: 0.7rem;
+  }
+
+  .scoreboard div {
+    padding: 8px 12px;
+    min-width: 80px;
+  }
+
+  .scoreboard p {
+    font-size: 0.75rem;
+  }
+
+  .scoreboard span {
+    font-size: 1.3rem;
+  }
+
+  .game {
+    width: 90vmin;
+    height: 90vmin;
+  }
+
+  .box {
+    width: 27vmin;
+    height: 27vmin;
+  }
+}
