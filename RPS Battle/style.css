@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+body {
+  background: linear-gradient(135deg, #dbeafe, #f0f9ff, #e0e7ff);
+  min-height: 100vh;
+  font-family: Arial, sans-serif;
+  color: #081b31;
+}
+
+h1 {
+  background-color: #081b31;
+  color: #fff;
+  height: 5rem;
+  line-height: 5rem;
+  font-size: 2rem;
+}
+
+/* Rock, Paper, Scissors container */
+.choices {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  margin-top: 5rem;
+}
+
+.choice {
+  height: 155px;
+  width: 155px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.2s;
+}
+
+.choice:hover {
+  cursor: pointer;
+  background-color: #000;
+  border-radius: 75%;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  transform: scale(1.05);
+}
+
+.choice img {
+  height: 150px;
+  width: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.25);
+  transition: 0.2s;
+}
+
+.choice:hover img {
+  box-shadow: 0 0 18px rgba(0, 0, 0, 0.55);
+}
+
+/* Score board */
+.score-board {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+  margin-top: 3rem;
+  gap: 5rem;
+}
+
+#user-score,
+#comp-score {
+  font-size: 4rem;
+}
+
+/* Message */
+.msg-container {
+  margin-top: 5rem;
+}
+
+#msg {
+  background-color: #081b31;
+  color: #fff;
+  font-size: 1.5rem;
+  display: inline-block;
+  padding: 1rem 1.5rem;
+  border-radius: 1rem;
+  max-width: 90%;
+}
